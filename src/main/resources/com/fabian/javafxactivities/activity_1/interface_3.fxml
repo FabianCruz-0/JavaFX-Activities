@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fabian.javafxactivities.activity_1.Interface03">
+   <children>
+      <Label layoutX="172.0" layoutY="14.0" text="ACTIVIDAD 4 - INTERFAZ 3">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="192.0" layoutY="368.0" prefHeight="18.0" prefWidth="218.0" text="1871963 Fabián Eduardo Cruz Amador">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Pane layoutX="26.0" layoutY="50.0" prefHeight="301.0" prefWidth="548.0" style="-fx-background-color: #ffffff; -fx-border-color: #AAAAAA;">
+         <children>
+            <Label alignment="CENTER" layoutX="59.0" layoutY="73.0" prefHeight="42.0" prefWidth="429.0" text="Selecciona qué figura se hará el cálculo de un área:" textAlignment="CENTER" />
+            <Button fx:id="circulo" layoutX="157.0" layoutY="135.0" mnemonicParsing="false" onAction="#circulo" style="-fx-background-color: #4488FF;" text="Círculo" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="triangulo" layoutX="314.0" layoutY="135.0" mnemonicParsing="false" onAction="#triangulo" style="-fx-background-color: #8888FF;" text="Triángulo" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="cuadrado" layoutX="313.0" layoutY="210.0" mnemonicParsing="false" onAction="#cuadrado" style="-fx-background-color: #44AA44;" text="Cuadrado" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="rombo" layoutX="156.0" layoutY="210.0" mnemonicParsing="false" onAction="#rombo" style="-fx-background-color: #AA5555;" text="Rombo" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
