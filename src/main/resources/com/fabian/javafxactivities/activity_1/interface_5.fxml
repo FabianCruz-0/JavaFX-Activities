@@ -22,7 +22,7 @@
          <children>
             <Label alignment="CENTER" layoutX="60.0" layoutY="14.0" prefHeight="25.0" prefWidth="429.0" text="Genera dos números aleatoreos y decide qué operación hacer:" textAlignment="CENTER" />
             <Button layoutX="155.0" layoutY="202.0" mnemonicParsing="false" onAction="#sumar" text="Suma" />
-            <Button layoutX="324.0" layoutY="202.0" mnemonicParsing="false" onAction="#mult" text="Multiplicación" />
+            <Button layoutX="324.0" layoutY="202.0" mnemonicParsing="false" onAction="#resta" text="Resta" />
             <Label fx:id="num01" alignment="CENTER" contentDisplay="CENTER" layoutX="120.0" layoutY="106.0" text="00" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="30.0" />

@@ -5,6 +5,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.web.WebView;
@@ -27,11 +28,6 @@ public class Interface05 {
         stage.show();
     }
 
-
-    public void mostrar(String figura){
-
-    }
-
     public void generate() {
         Random r = new Random();
         int low = 0;
@@ -44,9 +40,36 @@ public class Interface05 {
         
     }
 
-    public void sumar(ActionEvent actionEvent) {
+    public void calcular(String operacion) {
+
+        Integer num1 = Integer.parseInt(num01.getText());
+        Integer num2 = Integer.parseInt(num02.getText());
+        String resultado = "";
+
+        switch (operacion) {
+            case("suma"):
+                Integer suma = num1+num2;
+                resultado = "El resultado de la suma: " +num01.getText() +" + " + num02.getText() + " = " + suma + ".";
+                break;
+            case("resta"):
+                Integer resta = num1-num2;
+                resultado = "El resultado de la resta: " +num01.getText() +" - " + num02.getText() + " = " + resta + ".";
+                break;
+        }
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setHeaderText(null);
+        alert.setTitle("RESULTADO");
+        alert.setContentText(resultado);
+        alert.showAndWait();
+
     }
 
-    public void mult(ActionEvent actionEvent) {
+    public void sumar(ActionEvent actionEvent) {
+        calcular("suma");
+    }
+
+    public void resta(ActionEvent actionEvent) {
+        calcular("resta");
     }
 }
