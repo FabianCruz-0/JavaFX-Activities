@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fabian.javafxactivities.finalactivity.PIA">
+    <children>
+        <Label layoutX="238.0" layoutY="14.0" text="PIA - CAJERO">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="192.0" layoutY="368.0" prefHeight="18.0" prefWidth="218.0" text="1871963 Fabián Eduardo Cruz Amador">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+        </Label>
+        <Pane layoutX="26.0" layoutY="50.0" prefHeight="301.0" prefWidth="548.0" style="-fx-background-color: #ffffff; -fx-border-color: #AAAAAA;">
+            <children>
+                <Label alignment="CENTER" layoutX="60.0" layoutY="14.0" prefHeight="25.0" prefWidth="429.0" text="¡Hola Usuario! Selecciona la opción que desees:" textAlignment="CENTER">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font></Label>
+            <Button onAction="#consultar" layoutX="103.0" layoutY="57.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="142.0" style="-fx-background-color: #035efc;" text="CONSULTAR" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button onAction="#retirar" layoutX="304.0" layoutY="57.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="142.0" style="-fx-background-color: #035efc;" text="RETIRAR" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button onAction="#depositar" layoutX="103.0" layoutY="180.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="142.0" style="-fx-background-color: #035efc;" text="DEPOSITAR" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button onAction="#salir" layoutX="304.0" layoutY="180.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="142.0" style="-fx-background-color: #fc3003;" text="SALIR" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
